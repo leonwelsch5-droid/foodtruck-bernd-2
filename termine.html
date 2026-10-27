@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Termine – Smoker's Best Food Truck</title>
+  <meta name="description" content="Wo steht der Smoker's Best Food Truck? Alle aktuellen Termine und Standorte.">
+  <meta property="og:title" content="Smoker's Best Food Truck">
+  <meta property="og:description" content="Burger &amp; Pommes – Smoke. Eat. Repeat.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0b0b">
+  <!-- ENTWURF: vor dem echten Start entfernen, damit Google die Seite findet -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/rubik-dirt-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Smoker's Best – zur Startseite">
+        <img src="assets/img/logo.png" alt="" width="48" height="48">
+        <span>Smoker's Best</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Menü öffnen</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+        <a href="speisekarte.html">Speisekarte</a>
+        <a href="termine.html" aria-current="page">Termine</a>
+        <a href="index.html#ueber-uns">Über uns</a>
+        <a href="index.html#catering">Catering</a>
+        <a href="index.html#kontakt" class="nav-cta">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- STANDORTE -->
+    <!-- Termine werden im Google Kalender gepflegt. Die Kalender-ID unten bei data-calendar-id eintragen
+         (Google Kalender > Einstellungen > Kalender auswählen > "Kalender integrieren" > Kalender-ID).
+         Der Kalender muss dort auf "öffentlich" gestellt sein. -->
+    <section class="section locations" id="termine">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Standorte &amp; Zeiten</p>
+          <h1 class="section-title">Hier finden Sie uns</h1>
+          <p class="section-lead">Unsere nächsten Termine – immer aktuell.</p>
+        </header>
+
+        <div class="calendar" data-calendar-id="KALENDER-ID@group.calendar.google.com">
+          <div class="calendar-consent">
+            <p class="calendar-consent-title">Terminkalender anzeigen</p>
+            <p>
+              Unser Kalender wird von Google bereitgestellt. Erst wenn Sie auf den Button klicken,
+              wird er geladen und dabei Daten (z. B. Ihre IP-Adresse) an Google übertragen.
+              Mehr dazu in der <a href="datenschutz.html#google-kalender">Datenschutzerklärung</a>.
+            </p>
+            <button type="button" class="btn btn-light calendar-load">Kalender laden</button>
+            <label class="calendar-remember">
+              <input type="checkbox" class="calendar-remember-input"> Kalender künftig automatisch laden
+            </label>
+          </div>
+        </div>
+
+        <p class="loc-note">Kurzfristige Änderungen und Event-Termine posten wir immer zuerst auf <a href="https://www.instagram.com/smokersbestfoodtruck/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="" width="64" height="64" loading="lazy">
+        <p>Smoker's Best Food Truck<br><span>Glatz &amp; Glatz</span></p>
+      </div>
+      <nav class="footer-nav" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> Smoker's Best Food Truck</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

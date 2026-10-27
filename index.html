@@ -21,7 +21,7 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Smoker's Best – zur Startseite">
+      <a class="brand" href="index.html" aria-label="Smoker's Best – zur Startseite">
         <img src="assets/img/logo.png" alt="" width="48" height="48">
         <span>Smoker's Best</span>
       </a>
@@ -30,11 +30,12 @@
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
-        <a href="#karte">Speisekarte</a>
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#standorte">Standorte</a>
-        <a href="#catering">Catering</a>
-        <a href="#kontakt" class="nav-cta">Kontakt</a>
+        <a href="index.html" aria-current="page">Startseite</a>
+        <a href="speisekarte.html">Speisekarte</a>
+        <a href="termine.html">Termine</a>
+        <a href="index.html#ueber-uns">Über uns</a>
+        <a href="index.html#catering">Catering</a>
+        <a href="index.html#kontakt" class="nav-cta">Kontakt</a>
       </nav>
     </div>
   </header>
@@ -49,8 +50,8 @@
         <div class="container hero-content">
           <h1 class="sr-only">Smoker's Best Food Truck – Burger &amp; Pommes</h1>
           <div class="hero-actions">
-            <a class="btn btn-light" href="#karte">Zur Speisekarte</a>
-            <a class="btn btn-outline" href="#standorte">Wo stehen wir?</a>
+            <a class="btn btn-light" href="speisekarte.html">Zur Speisekarte</a>
+            <a class="btn btn-outline" href="termine.html">Wo stehen wir?</a>
           </div>
         </div>
       </div>
@@ -74,74 +75,6 @@
       </div>
     </section>
 
-    <!-- SPEISEKARTE -->
-    <section class="section menu" id="karte">
-      <div class="container">
-        <header class="section-head">
-          <p class="kicker">Speisekarte</p>
-          <h2 class="section-title">Burger &amp; Pommes</h2>
-          <p class="section-lead">Konzentriert aufs Wesentliche: frische Burger und knusprige Pommes.</p>
-        </header>
-
-        <!-- FOTOS: zwei Bilder als assets/img/essen/foto-1.jpg und foto-2.jpg ablegen –
-             sie erscheinen dann automatisch statt "Foto folgt". -->
-        <div class="slider" aria-label="Fotos von unserem Essen">
-          <div class="slider-track">
-            <figure class="slide">
-              <div class="slide-placeholder"><span>Foto 1 folgt</span></div>
-              <img src="assets/img/essen/foto-1.jpg" alt="Burger von Smoker's Best" loading="lazy">
-            </figure>
-            <figure class="slide">
-              <div class="slide-placeholder"><span>Foto 2 folgt</span></div>
-              <img src="assets/img/essen/foto-2.jpg" alt="Pommes von Smoker's Best" loading="lazy">
-            </figure>
-          </div>
-          <div class="slider-dots" role="tablist">
-            <button type="button" class="active" aria-label="Foto 1 anzeigen"></button>
-            <button type="button" aria-label="Foto 2 anzeigen"></button>
-          </div>
-        </div>
-
-        <h3 class="menu-cat">Burger</h3>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <div class="menu-row"><h4>Hamburger</h4><span class="dots" aria-hidden="true"></span><span class="price">8,00 €</span></div>
-            <p>Der Klassiker: Burgerbrötchen, saftiges Patty, Eisbergsalat, eingelegte Gurken, Tomaten, Röstzwiebeln und hausgemachte Burgersauce.</p>
-          </li>
-          <li class="menu-item">
-            <div class="menu-row"><h4>Cheeseburger</h4><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div>
-            <p>Wie der Hamburger – mit einer Scheibe Käse.</p>
-          </li>
-          <li class="menu-item">
-            <div class="menu-row"><h4>BBQ Burger</h4><span class="dots" aria-hidden="true"></span><span class="price">10,00 €</span></div>
-            <p>Wie der Hamburger – mit knusprig gebratenem Bacon und hausgemachter BBQ-Sauce.</p>
-          </li>
-          <li class="menu-item">
-            <div class="menu-row"><h4>Veggie Burger</h4><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div>
-            <p>Wie der Hamburger – mit einem Patty auf Kartoffelbasis statt Fleisch.</p>
-          </li>
-        </ul>
-
-        <h3 class="menu-cat">Pommes</h3>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <div class="menu-row"><h4>Pommes</h4><span class="dots" aria-hidden="true"></span><span class="price">3,50 €</span></div>
-            <p>Knusprig frittiert.</p>
-          </li>
-          <li class="menu-item">
-            <div class="menu-row"><h4>Pommes mit Ketchup oder Mayo</h4><span class="dots" aria-hidden="true"></span><span class="price">4,00 €</span></div>
-            <p>Wahlweise mit Ketchup <strong>oder</strong> Mayo.</p>
-          </li>
-          <li class="menu-item">
-            <div class="menu-row"><h4>Chili Cheese Fries</h4><span class="dots" aria-hidden="true"></span><span class="price">5,00 €</span></div>
-            <p>Pommes mit Cheddar-Chili-Cheese-Sauce.</p>
-          </li>
-        </ul>
-
-        <p class="menu-note">Alle Preise in Euro inkl. MwSt. Infos zu Allergenen und Zusatzstoffen gibt's direkt am Truck.</p>
-      </div>
-    </section>
-
     <!-- ÜBER UNS -->
     <section class="section about" id="ueber-uns">
       <div class="container about-grid">
@@ -162,37 +95,6 @@
           </p>
           <p class="script script-lg">Smoke · Eat · Repeat</p>
         </div>
-      </div>
-    </section>
-
-    <!-- STANDORTE -->
-    <!-- Termine werden im Google Kalender gepflegt. Die Kalender-ID unten bei data-calendar-id eintragen
-         (Google Kalender > Einstellungen > Kalender auswählen > "Kalender integrieren" > Kalender-ID).
-         Der Kalender muss dort auf "öffentlich" gestellt sein. -->
-    <section class="section locations" id="standorte">
-      <div class="container">
-        <header class="section-head">
-          <p class="kicker">Standorte &amp; Zeiten</p>
-          <h2 class="section-title">Hier finden Sie uns</h2>
-          <p class="section-lead">Unsere nächsten Termine – immer aktuell.</p>
-        </header>
-
-        <div class="calendar" data-calendar-id="KALENDER-ID@group.calendar.google.com">
-          <div class="calendar-consent">
-            <p class="calendar-consent-title">Terminkalender anzeigen</p>
-            <p>
-              Unser Kalender wird von Google bereitgestellt. Erst wenn Sie auf den Button klicken,
-              wird er geladen und dabei Daten (z. B. Ihre IP-Adresse) an Google übertragen.
-              Mehr dazu in der <a href="datenschutz.html#google-kalender">Datenschutzerklärung</a>.
-            </p>
-            <button type="button" class="btn btn-light calendar-load">Kalender laden</button>
-            <label class="calendar-remember">
-              <input type="checkbox" class="calendar-remember-input"> Kalender künftig automatisch laden
-            </label>
-          </div>
-        </div>
-
-        <p class="loc-note">Kurzfristige Änderungen und Event-Termine posten wir immer zuerst auf <a href="https://www.instagram.com/smokersbestfoodtruck/" target="_blank" rel="noopener">Instagram</a>.</p>
       </div>
     </section>
 
