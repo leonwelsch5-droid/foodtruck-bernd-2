@@ -212,6 +212,15 @@ a { color: inherit; }
 .menu-row .price { font-family: var(--font-display); font-size: 1.65rem; white-space: nowrap; }
 .menu-note { text-align: center; color: #555; font-size: 1rem; margin: 40px auto 0; max-width: 620px; }
 
+/* ---------- Genießen ---------- */
+.enjoy { border-top: 1px solid var(--ash); }
+.enjoy-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+.enjoy-photo { margin: 0; border: 2px solid var(--paper); }
+.enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.enjoy-text { max-width: 420px; }
+.enjoy-text .section-title { margin-bottom: 16px; }
+.enjoy-text p:not(.kicker) { color: #cfcac2; margin: 0 0 28px; }
+
 /* ---------- Über uns ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: center; }
 .about-logo img { width: min(380px, 100%); margin-inline: auto; filter: drop-shadow(0 0 40px rgba(255,255,255,.08)); }
@@ -293,6 +302,8 @@ a { color: inherit; }
   .nav-cta { border: 0; border-top: 1px solid var(--ash); }
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  .enjoy-grid { grid-template-columns: 1fr; gap: 28px; }
+  .enjoy-text { max-width: none; text-align: center; }
   .about-logo img { width: 240px; }
   .contact-grid { grid-template-columns: 1fr; }
   .calendar-consent { padding: 36px 20px; }
