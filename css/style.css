@@ -216,7 +216,7 @@ a { color: inherit; }
 .enjoy { border-top: 1px solid var(--ash); }
 .enjoy-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
 .enjoy-photo { margin: 0; border: 2px solid var(--paper); }
-.enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1) contrast(1.05); }
+.enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .enjoy-text { max-width: 420px; }
 .enjoy-text .section-title { margin-bottom: 16px; }
 .enjoy-text p:not(.kicker) { color: #cfcac2; margin: 0 0 28px; }
