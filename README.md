@@ -20,4 +20,4 @@ Voraussetzung: [Python 3](https://www.python.org/downloads/) ist installiert.
 
 Alternativ manuell im Ordner: `python3 -m http.server 8000`
 
-**Noch offen:** siehe [`OFFENE-PUNKTE.md`](OFFENE-PUNKTE.md).
+**Noch offen:** Anschrift im Impressum/Datenschutz, Google-Kalender-ID (`termine.html`), zwei Fotos für den Slider (`assets/img/essen/`).
