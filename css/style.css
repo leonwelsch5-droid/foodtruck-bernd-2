@@ -215,9 +215,10 @@ a { color: inherit; }
 /* ---------- Genießen ---------- */
 .enjoy { border-top: 1px solid var(--ash); }
 /* Foto bewusst klein und links, Text rechts daneben */
-.enjoy-grid { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 460px); justify-content: start; gap: 28px; align-items: center; }
-.enjoy-photo { margin: 0; border: 2px solid var(--paper); }
-.enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.enjoy-grid { display: grid; grid-template-columns: minmax(0, 440px) minmax(0, 460px); justify-content: start; gap: 32px; align-items: stretch; }
+.enjoy-photo { margin: 0; border: 2px solid var(--paper); min-height: 240px; }
+/* Foto so hoch wie der Textblock daneben */
+.enjoy-photo img { width: 100%; height: 100%; object-fit: cover; }
 .enjoy-text { max-width: 420px; }
 .enjoy-text .section-title { margin-bottom: 16px; }
 .enjoy-text p:not(.kicker) { color: #cfcac2; margin: 0 0 28px; }
@@ -317,7 +318,7 @@ a { color: inherit; }
   .hero-actions .btn { flex: 1 1 100%; text-align: center; }
   .usp { grid-template-columns: 1fr; }
   .enjoy-grid { grid-template-columns: 1fr; gap: 20px; }
-  .enjoy-photo { max-width: 240px; }
+  .enjoy-photo img { height: auto; aspect-ratio: 3 / 2; }
   .menu-row .dots { min-width: 12px; }
   .menu-row h4, .menu-row .price { font-size: 1.5rem; }
 }
