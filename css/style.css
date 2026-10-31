@@ -214,7 +214,8 @@ a { color: inherit; }
 
 /* ---------- Genießen ---------- */
 .enjoy { border-top: 1px solid var(--ash); }
-.enjoy-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+/* Foto bewusst klein und links, Text rechts daneben */
+.enjoy-grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 460px); justify-content: start; gap: 48px; align-items: center; }
 .enjoy-photo { margin: 0; border: 2px solid var(--paper); }
 .enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .enjoy-text { max-width: 420px; }
@@ -244,7 +245,7 @@ a { color: inherit; }
 
 /* ---------- Catering ---------- */
 .catering {
-  background: linear-gradient(rgba(11,11,11,.9), rgba(11,11,11,.96)), url("../assets/img/hero-bw.jpg") center/cover;
+  background: linear-gradient(rgba(11,11,11,.9), rgba(11,11,11,.96)), url("../assets/img/hero-bw.jpg?v=2") center/cover;
   text-align: center;
 }
 .checklist { list-style: none; padding: 0; margin: 32px auto 40px; display: flex; width: fit-content; flex-direction: column; gap: 10px; text-align: left; }
@@ -302,8 +303,7 @@ a { color: inherit; }
   .nav-cta { border: 0; border-top: 1px solid var(--ash); }
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
-  .enjoy-grid { grid-template-columns: 1fr; gap: 28px; }
-  .enjoy-text { max-width: none; text-align: center; }
+  .enjoy-grid { grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 28px; }
   .about-logo img { width: 240px; }
   .contact-grid { grid-template-columns: 1fr; }
   .calendar-consent { padding: 36px 20px; }
@@ -317,6 +317,8 @@ a { color: inherit; }
   .hero-overlay { margin-top: 0; }
   .hero-actions .btn { flex: 1 1 100%; text-align: center; }
   .usp { grid-template-columns: 1fr; }
+  .enjoy-grid { grid-template-columns: 1fr; gap: 20px; }
+  .enjoy-photo { max-width: 240px; }
   .menu-row .dots { min-width: 12px; }
   .menu-row h4, .menu-row .price { font-size: 1.5rem; }
 }
