@@ -1,3 +1,34 @@
+// Texte beim Scrollen von unten einfliegen lassen (wie auf der alten Website)
+const revealTargets = document.querySelectorAll(
+  ".claim .container > *, .usp li, .section-head > *, .enjoy-photo, .enjoy-text > *, " +
+  ".about-logo, .about-text > *, .slider, .menu-cat, .menu-item, .menu-note, .calendar, .loc-note, " +
+  ".catering-inner > *, .contact-card, .contact-sign"
+);
+if ("IntersectionObserver" in window && revealTargets.length) {
+  document.documentElement.classList.add("js");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add("is-visible");
+      observer.unobserve(el);
+      // danach aufräumen, damit Hover-Effekte wieder ohne Verzögerung laufen
+      el.addEventListener("transitionend", () => {
+        el.classList.remove("reveal", "is-visible");
+        el.style.transitionDelay = "";
+      }, { once: true });
+    });
+  }, { rootMargin: "0px 0px -8% 0px" });
+
+  revealTargets.forEach((el) => {
+    // Geschwister leicht nacheinander starten lassen
+    const index = Array.prototype.indexOf.call(el.parentElement.children, el);
+    el.style.transitionDelay = Math.min(index, 4) * 0.12 + "s";
+    el.classList.add("reveal");
+    observer.observe(el);
+  });
+}
+
 // Mobile Navigation ein-/ausklappen
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.getElementById("main-nav");
