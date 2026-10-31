@@ -215,7 +215,7 @@ a { color: inherit; }
 /* ---------- Genießen ---------- */
 .enjoy { border-top: 1px solid var(--ash); }
 /* Foto bewusst klein und links, Text rechts daneben */
-.enjoy-grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 460px); justify-content: start; gap: 48px; align-items: center; }
+.enjoy-grid { display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 460px); justify-content: start; gap: 28px; align-items: center; }
 .enjoy-photo { margin: 0; border: 2px solid var(--paper); }
 .enjoy-photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .enjoy-text { max-width: 420px; }
@@ -303,7 +303,6 @@ a { color: inherit; }
   .nav-cta { border: 0; border-top: 1px solid var(--ash); }
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
-  .enjoy-grid { grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 28px; }
   .about-logo img { width: 240px; }
   .contact-grid { grid-template-columns: 1fr; }
   .calendar-consent { padding: 36px 20px; }
